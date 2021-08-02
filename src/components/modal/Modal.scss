@@ -24,11 +24,15 @@
   background-color: #e2f5f6;
   width: 600px;
   height: 500px;
+
+  &-cross{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
 }
 
 .modal__image{
-  position: absolute;
-  right: 635px;
   width: 20px;
   height: 20px;
   &:hover{
