@@ -71,11 +71,13 @@ export const Modal: FC = (): ReactElement=> {
     return (
         <div className={ modal ? "modal active" : "modal"} onClick={() => dispatch(setModal(false))}>
             <div className="modal__content" onClick={e => e.stopPropagation()}>
-                <img
-                    src="https://i.ibb.co/5s53Nyj/cross.png"
-                    alt="" className="modal__image"
-                    onClick={() => dispatch(setModal(false))}
-                />
+                <div className="modal__content-cross">
+                    <img
+                        src="https://i.ibb.co/5s53Nyj/cross.png"
+                        alt="" className="modal__image"
+                        onClick={() => dispatch(setModal(false))}
+                    />
+                </div>
                 <div className="block-form">
                         <input
                             name="title"
